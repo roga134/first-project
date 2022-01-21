@@ -25,11 +25,12 @@ def api():
     pasokh = get("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=33b6279f4b2c6787c70a5e62120ccbb6")
     o = pasokh.json()
     return o
-    print(api("London"))
+    
 
 api()
  
-    
+if c in bale_part :
+    print(api("London"))
 
 
 print("aya mi khohi bazi koni?")
