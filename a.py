@@ -2,6 +2,7 @@ from math import *
 from requests import *
 from time import *
 from pygame import *
+bale_part = ['BALE' , 'bale' , 'bale ' , 'BALE ' , 'Bale ' , 'Bale']
 
 print("nam karbari khodeto type kon?")
 a=input("")
@@ -9,14 +10,9 @@ print(a)
 print("ahle kojai? ahale iran hasti?")
 b=input("")
 
-if b == "BALE" :
-    print("khosh bakhtim")
+if b in bale_part :
+    print('khosh bakhtam')
 
-if b == " bale" :
-    print("khosh bakhtim")
-
-if b == "bale":
-    print("khosh bakhtam")
 
 
 
@@ -39,7 +35,7 @@ api()
 print("aya mi khohi bazi koni?")
 d = input("")
 
-if d == "bale":
+if d in bale_part:
     print("bazi ene ke")
     print("se ta gozine mi dim har kodam ro entkhab konid barat baz mi konim")
     print("ke faghat yki az on doroste")
