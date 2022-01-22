@@ -1,7 +1,7 @@
 from math import *
 from requests import *
 from time import *
-#from pygame import *
+#from pygame import mixer
 bale_part = ['BALE' , 'bale' , 'bale ' , 'BALE ' , 'Bale ' , 'Bale',' BALE' , 'bAlE' , ' bAlE' , 'bAlE ' , 'BaLe' , ' BaLe' , 'BaLe ' , ' Bale' , 'Bale ' , 'bAle' , ' bAle' , 'bAle ' , 'baLe' , ' baLe' , 'baLe ' , 'balE' , ' balE' , 'balE ' ]
 
 print("nam karbari khodeto type kon?")
@@ -191,6 +191,5 @@ print("sazandeghan in bazi")
 print("kiarash noroozi : kod hai bazi ro neveshte")
 print("bazi ro estadio k.n.p sakhte")
 print("omidvaram az bazi ma lezat borde bashid")
-
 
 
