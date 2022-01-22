@@ -1,23 +1,29 @@
 # this part we use Presentation for all of part like hi part and ...
 # we using this part for feeling_part
-feeling_good = {'I am good', 'Im good', 'Im not bad', 'I am not bad', 'Im perfect', 'I am perfect', 'tnx', 'Im ok',
-                'I am ok', 'fine tnx', ' fine thank you', 'fine thanks', 'fine', 'I am fine', 'Im fine'}
+feeling_good = ['I am good', 'Im good', 'Im not bad', 'I am not bad', 'Im perfect', 'I am perfect', 'tnx', 'Im ok',
+                'I am ok', 'fine tnx', ' fine thank you', 'fine thanks', 'fine', 'I am fine', 'Im fine']
 # we can use this part in all of the AI its all pusetive word
-yes_part = {'yes', "Yes", "ya", 'Ya', 'yeap', 'Yeap', 'yeah', 'Yeah', 'ok', 'Ok', 'no Im ok', 'no I am ok',
+yes_part = ['yes', "Yes", "ya", 'Ya', 'yeap', 'Yeap', 'yeah', 'Yeah', 'ok', 'Ok', 'no Im ok', 'no I am ok',
             'I can continue', 'please continue', 'continue', 'I know', 'I know ', 'of course ', 'of course',
             'Of course ', 'Of course', 'yea', 'Yea', 'some', 'lot', 'know', 'maby', 'yes,I do.', 'yes, I do',
-            'yes I do', 'I do'}
+            'yes I do', 'I do']
 # we use this part for first or hi_part
-hi_part_array = {"hi", "Hi", "hello", "Hello", "hey", "Hey"}
+hi_part_array = ["hi", "Hi", "hello", "Hello", "hey", "Hey" ]
 # this part is for county and its best country in my idea
-good_country = {'America', 'Russia', 'Japan', 'Canada', 'Turkish', 'Netherlands', 'Europe'}
+good_country = ['America', 'Russia', 'Japan', 'Canada', 'Turkish', 'Netherlands', 'Europe']
 # this part using for time part and AI can undrestand your time
-morning_time = {5, 6, 7, 8, 9, 10}
-noon_time = {11, 12, 13, 14, 15, 16}
-after_noon_time = {17, 18, 19, 20, 21}
-night_time = {22, 23, 24, 1, 2, 3, 4}
+#morning_time = [5, 6, 7, 8, 9, 10]
+
+#noon_time = [11, 12, 13, 14, 15, 16]
+#after_noon_time = [17, 18, 19, 20, 21]
+#night_time = [22, 23, 24, 1, 2, 3, 4]
 # this part using for
-good_weather = {'good', 'so so', 'it is not bad', 'its not bad', 'it isnt bad'}
+good_weather = ['good', 'so so', 'it is not bad', 'its not bad', 'it isnt bad']
+# this code will import request libery
+from requests import *
+# this code will import date libery
+import datetime
+
 
 
 # this part is for first part and AI can  undrestand do you want to speek with me or no and it part for hi
@@ -29,13 +35,14 @@ def hi_part():
     if starting not in hi_part_array:
         print("I said hi")
         starting = input('')
-        if starting != hi_part:  # in this part if you wnat to speek with my AI can undrestand
+        if starting not in hi_part:  # in this part if you wnat to speek with my AI can undrestand
             print('do you want speek to me?')
             want_speek = input('')
-            if want_speek in yes_part:
+            if want_speek in yes_part: # here I can undrestand do you wnat to speek with me or no
                 print('ok, we start again ')
             else:
-                exit('good bye')
+                print('good bye')
+                exit()
 
 
 # this part AI can undrestand how are you and we you continue ?
@@ -57,34 +64,68 @@ def feeling_part():
 # this part AI can undrestand whats your name
 def name_part():
     print('whats your name?')
-    name = input('').replace('my name is ', "").replace('Im ', '').replace('my first name is ', '').replace(
-        'my last name is ', '')
+    name = input('').replace('my name is ', "").replace('Im ', '').replace('my first name is ', '').replace('my last name is ', '')# here if you say you name with my name is and ... I delete it and I use you name in under this line
     print('nice to meet you ' + name + ' thats nice name ')
 
+# this def will undrestand your city and tell you about your city
+def your_city_part():
+    print('do you wnat to say your city name?')
+    know_want_name_city = input()
+    if know_want_name_city in yes_part :
+        print('ok tell me you city')
+        city_name = str(input())
+        print('ok now do you want to know about your city like weather , location and ...')
+        know_city = input()
+        if know_city in yes_part:
+            first_name_of_city = city_name[:1]
+            upper_first_name_of_city = str.upper(first_name_of_city)
+            replace_first_name_of_cirt = city_name.replace(first_name_of_city , upper_first_name_of_city)
+            pasokh = get("https://api.openweathermap.org/data/2.5/weather?q="+replace_first_name_of_cirt+"&appid=33b6279f4b2c6787c70a5e62120ccbb6")
+            comlite_know_city = pasokh.json()
+            print(comlite_know_city)  
+        else :
+            exit('ok we can continue')
+    else :
+        print('ok we can continue')
 
 # this part AI can undrestand where are from
 def you_from_part():
     print('where are you from ?')
-    your_country = input('').replace('Im from ', "").replace('I am from ', '').replace('my country is ', '')
-    if your_country in good_country:
+    your_country = input('').replace('Im from ', "").replace('I am from ', '').replace('my country is ', '')# here is like name_part() but I do that work with country
+    if your_country in good_country: 
         print('thats nice, ' + your_country + ' is very good country')
+        your_city_part()
     else:
         print('you can try and travel to good country ')
+        your_city_part()
+
+#this code say good morning or noon or .. from your time 
+def zone_time_part():
+    date_now = datetime.datetime.now()
+    time_now = float(date_now.strftime("%H"))
+    if time_now >= 5 and time_now <= 10 :
+        print('good morning')
+    elif time_now >= 11 and time_now <= 16 :
+        print('good noon')
+    elif time_now >= 17 and time_now <= 21 :
+        print('good after noon')
+    else :
+        print('good night')
+
+
 
 
 # this part AI can undrestand what time is in your place that you leave and we can use it in now and at the end of AI
 def time_part():
-    print('so, what time is there?')
-    time = int(input(''))  # .replace(Additional_time , "") # we give time from a person who want speek with AI
-    if time in morning_time:  # AI undrestand its morning
-        print('good morning')
-    elif time in noon_time:  # AI undrestand its noon
-        print('good noon')
-    elif time in after_noon_time:  # AI undrestand its after noon
-        print('good after noon')
-
-    elif time in night_time:  # AI undrestand its night
-        print('good night')
+    date_now = datetime.datetime.now()
+    time_now = date_now.strftime("%H")
+    print('do you wnat to know date?')
+    know_date = input()
+    if know_date in yes_part :
+        print(date_now)
+        zone_time_part()
+    else :
+        zone_time_part()
 
 
 # in this time AI can undrestand weather of your country and you can undrestand I love cold weather
