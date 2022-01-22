@@ -1,18 +1,27 @@
 from math import *
 from requests import *
 from time import *
+<<<<<<< HEAD
 #from pygame import *
 bale_part = ['BALE' , 'bale' , 'bale ' , 'BALE ' , 'Bale ' , 'Bale']
+=======
+from pygame import *
+>>>>>>> fe56a884c245ee848efdb89bfdfc642be85cde39
 
 print("nam karbari khodeto type kon?")
 a=input("")
-print(a)
+print("nam karbari" , a)
 print("ahle kojai? ahale iran hasti?")
 b=input("")
 
-if b in bale_part :
-    print('khosh bakhtam')
+if b == "BALE" :
+    print("khosh bakhtim")
 
+if b == " bale" :
+    print("khosh bakhtim")
+
+if b == "bale":
+    print("khosh bakhtam")
 
 
 
@@ -24,16 +33,25 @@ def api():
     city = "London"
     pasokh = get("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=33b6279f4b2c6787c70a5e62120ccbb6")
     o = pasokh.json()
+<<<<<<< HEAD
     return o    
 
 
 print(api())
+=======
+    return o
+    print(api("London"))
+
+api()
+ 
+    
+>>>>>>> fe56a884c245ee848efdb89bfdfc642be85cde39
 
 
 print("aya mi khohi bazi koni?")
 d = input("")
 
-if d in bale_part:
+if d == "bale":
     print("bazi ene ke")
     print("se ta gozine mi dim har kodam ro entkhab konid barat baz mi konim")
     print("ke faghat yki az on doroste")
