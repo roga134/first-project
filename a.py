@@ -21,8 +21,17 @@ c=input("")
 
 
 def api():
-    city = "tehran"
-    pasokh = get("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=33b6279f4b2c6787c70a5e62120ccbb6")
+    pr = print('do want to undrestand weather of you city?')
+    city = input()
+    if city in bale_part:
+        print('ok tell me your city')
+    else :
+        exit()
+    city2 = str(input())
+    c = city2[:1]
+    oo = str.upper(c)
+    pq = city2.replace(oo , c)
+    pasokh = get("https://api.openweathermap.org/data/2.5/weather?q="+pq+"&appid=33b6279f4b2c6787c70a5e62120ccbb6")
     o = pasokh.json()
     return o    
 
