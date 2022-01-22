@@ -11,12 +11,6 @@ yes_part = ['yes', "Yes", "ya", 'Ya', 'yeap', 'Yeap', 'yeah', 'Yeah', 'ok', 'Ok'
 hi_part_array = ["hi", "Hi", "hello", "Hello", "hey", "Hey" ]
 # this part is for county and its best country in my idea
 good_country = ['America', 'Russia', 'Japan', 'Canada', 'Turkish', 'Netherlands', 'Europe']
-# this part using for time part and AI can undrestand your time
-#morning_time = [5, 6, 7, 8, 9, 10]
-
-#noon_time = [11, 12, 13, 14, 15, 16]
-#after_noon_time = [17, 18, 19, 20, 21]
-#night_time = [22, 23, 24, 1, 2, 3, 4]
 # this part using for
 good_weather = ['good', 'so so', 'it is not bad', 'its not bad', 'it isnt bad']
 # this code will import request libery
