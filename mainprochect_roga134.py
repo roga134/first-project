@@ -8,7 +8,7 @@ yes_part = ['yes', "Yes", "ya", 'Ya', 'yeap', 'Yeap', 'yeah', 'Yeah', 'ok', 'Ok'
             'Of course ', 'Of course', 'yea', 'Yea', 'some', 'lot', 'know', 'maby', 'yes,I do.', 'yes, I do',
             'yes I do', 'I do']
 # we use this part for first or hi_part
-hi_part_array = ["hi", "Hi", "hello", "Hello", "hey", "Hey" ]
+hi_part_array = ["hi", "Hi", "hello", "Hello", "hey", "Hey" , 'hi ' , 'Hi ' , 'Hello ' , 'hello ' , 'Hey ' , 'hey ']
 # this part is for county and its best country in my idea
 good_country = ['America', 'Russia', 'Japan', 'Canada', 'Turkish', 'Netherlands', 'Europe']
 # this part using for
