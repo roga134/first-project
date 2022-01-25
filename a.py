@@ -4,6 +4,11 @@ from requests import *
 from time import *
 #from pygame import mixer
 bale_part = ['BALE' , 'bale' , 'bale ' , 'BALE ' , 'Bale ' , 'Bale',' BALE' , 'bAlE' , ' bAlE' , 'bAlE ' , 'BaLe' , ' BaLe' , 'BaLe ' , ' Bale' , 'Bale ' , 'bAle' , ' bAle' , 'bAle ' , 'baLe' , ' baLe' , 'baLe ' , 'balE' , ' balE' , 'balE ' ]
+salam_part = ['salam' , 'Salam' , 'sAlam' , 'saLam' , 'salAm' , 'salaM' , 'SaLaM' , 'sAlAm' , 'SALAM' ]
+print("salam")
+z = input("")
+
+
 
 print("nam karbari khodeto type kon?")
 a=input("")
@@ -38,7 +43,6 @@ def api():
 
 
 print(api())
-
 
 
 print("aya mi khohi bazi koni?")
