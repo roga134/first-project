@@ -1,12 +1,9 @@
+
 from math import *
 from requests import *
 from time import *
 #from pygame import mixer
 bale_part = ['BALE' , 'bale' , 'bale ' , 'BALE ' , 'Bale ' , 'Bale',' BALE' , 'bAlE' , ' bAlE' , 'bAlE ' , 'BaLe' , ' BaLe' , 'BaLe ' , ' Bale' , 'Bale ' , 'bAle' , ' bAle' , 'bAle ' , 'baLe' , ' baLe' , 'baLe ' , 'balE' , ' balE' , 'balE ' ]
-salam_part = ['salam' , 'Salam' , 'sAlam' , 'saLam' , 'salAm' , 'salaM' , 'SaLaM' , 'sAlAm' , 'SALAM' ]
-
-print("salam")
-z = input("")
 
 print("nam karbari khodeto type kon?")
 a=input("")
@@ -42,6 +39,22 @@ def api():
 
 print(api())
 
+def time_part():
+    print("aya mi khahid zaman ro be shoma neshon bedam?")
+    z = input("")
+    if z in bale_part :
+        print("zaman va saat")
+    date_now = datetime.datetime.now()
+    time_now = date_now.strftime("%H")
+    print('do you wnat to know date?')
+    know_date = input()
+    if know_date in yes_part :
+        print(date_now)
+        zone_time_part()
+    else :
+        zone_time_part()
+
+time_part()
 
 
 print("aya mi khohi bazi koni?")
