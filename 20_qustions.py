@@ -18,28 +18,11 @@ if flag == True :
 	for i in random_word :
 		flag = False
 
-
-# this part will call def based on random word
-if i == 'cat' :
-	one_proper_noun()
-if i == 'book' :
-	two_proper_noun()
-if i == 'dress' :
-	three_proper_noun()
-if i == 'guitar' :
-	four_proper_noun()
-if i == 'giraffe' :
-	five_proper_noun()
-if i == 'keyboard' :
-	six_proper_noun()
-if i == 'Bill Gates' :
-	seven_proper_noun()
-if i == 'university' :
-	eight_proper_noun()
-if i == 'photography' :
-	nine_proper_noun()
-
-
+# this part will Conversion  questions list to string and use it in defs
+flag2 = True
+if flag2 == True :
+	for j in questions_list :
+		flag2 = False
 
 #this print just mean rule of 20 questions 
 print('******************** welcom to 20 questions ********************')
@@ -49,49 +32,76 @@ print('ok , lets start')
 print('now you can ask questions')
 ask_questions = input()
 
+
+
 # I choos 9 proper noun and first 3 is for mahdy and secend 3 for shervin and third 3 is for kiarash
 # mahdy
 def one_proper_noun():
-	print('hi')
 
 
 
 def two_proper_noun():
-	print('hi1')
+
+
 
 
 
 def three_proper_noun():
-	print('hi2')
-
+	
 
 
 #shervin 
 def four_proper_noun():
-	print('hi3')
 	
 
+	
 
 def five_proper_noun():
-	print('hi4')
+	
 
 
 
 def six_proper_noun():
-	print('hi5')
+	
 	
 
 
 #kiarash
 def seven_proper_noun():
-	print('hi6')
+	
+
 	
 
 
 def eight_proper_noun():
-	print('hi7')
+	
 
 
 
 def nine_proper_noun():
-	print('hi8')
+	
+
+
+
+# this part will call def based on random word
+if i == 'cat' :
+	one_proper_noun()
+elif i == 'book' :
+	two_proper_noun()
+elif i == 'dress' :
+	three_proper_noun()
+elif i == 'guitar' :
+	four_proper_noun()
+elif i == 'giraffe' :
+	five_proper_noun()
+elif i == 'keyboard' :
+	six_proper_noun()
+elif i == 'Bill Gates' :
+	seven_proper_noun()
+elif i == 'university' :
+	eight_proper_noun()
+elif i == 'photography' :
+	nine_proper_noun()
+
+
+
