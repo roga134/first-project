@@ -20,7 +20,7 @@ ask_questions = input()
 
 # I choos 9 proper noun and first 3 is for mahdy and secend 3 for shervin and third 3 is for kiarash
 # mahdy
-def one_proper_noun():
+#def one_proper_noun():
 
 
 
