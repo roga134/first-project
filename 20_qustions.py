@@ -1,14 +1,28 @@
 # we can use this part in all of the AI its all pusetive word
 yes_part = ['yes', "Yes", "ya", 'Ya', 'yeap', 'Yeap', 'yeah', 'Yeah', 'ok', 'Ok', 'no Im ok', 'no I am ok','I can continue', 'please continue', 'continue', 'I know', 'I know ', 'of course ', 'of course','Of course ', 'Of course', 'yea', 'Yea', 'some', 'lot', 'know', 'maby', 'yes,I do.', 'yes, I do','yes I do', 'I do']
+#this code will import random for AI
+import random
 
 
+
+# this part is 2 lists for using in AI 
 questions_list = [ 'is it alive?' , 'is it man?' , 'is it woman?' , 'is it car?' , 'is it city?' , 'is it fruit' ,    ]
 proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
 
 
-for i in proper_noun_9 :
-	print(i)
 
+#this part choos one word random from proper_noun_9
+flag = True
+if flag == True :
+	random_word = random.sample(proper_noun_9 , k = 1)
+	for i in random_word :
+		flag = False
+
+# this part will Conversion  questions list to string and use it in defs
+flag2 = True
+if flag2 == True :
+	for j in questions_list :
+		flag2 = False
 
 #this print just mean rule of 20 questions 
 print('******************** welcom to 20 questions ********************')
@@ -18,40 +32,76 @@ print('ok , lets start')
 print('now you can ask questions')
 ask_questions = input()
 
+
+
 # I choos 9 proper noun and first 3 is for mahdy and secend 3 for shervin and third 3 is for kiarash
 # mahdy
-#def one_proper_noun():
+def one_proper_noun():
 
 
 
-#def two_proper_noun():
+def two_proper_noun():
 
 
 
-#def three_proper_noun():
 
 
-
-#shervin 
-#def four_proper_noun():
+def three_proper_noun():
 	
 
 
-#def five_proper_noun():
+#shervin 
+def four_proper_noun():
+	
+
+	
+
+def five_proper_noun():
+	
 
 
 
-#def six_proper_noun():
+def six_proper_noun():
+	
 	
 
 
 #kiarash
-#def seven_proper_noun():
+def seven_proper_noun():
+	
+
 	
 
 
-#def eight_proper_noun():
+def eight_proper_noun():
+	
 
 
 
-#def nine_proper_noun():
+def nine_proper_noun():
+	
+
+
+
+# this part will call def based on random word
+if i == 'cat' :
+	one_proper_noun()
+elif i == 'book' :
+	two_proper_noun()
+elif i == 'dress' :
+	three_proper_noun()
+elif i == 'guitar' :
+	four_proper_noun()
+elif i == 'giraffe' :
+	five_proper_noun()
+elif i == 'keyboard' :
+	six_proper_noun()
+elif i == 'Bill Gates' :
+	seven_proper_noun()
+elif i == 'university' :
+	eight_proper_noun()
+elif i == 'photography' :
+	nine_proper_noun()
+
+
+
