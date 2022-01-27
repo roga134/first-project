@@ -3,7 +3,7 @@ yes_part = ['yes', "Yes", "ya", 'Ya', 'yeap', 'Yeap', 'yeah', 'Yeah', 'ok', 'Ok'
 
 
 questions_list = [ 'is it alive?' , 'is it man?' , 'is it woman?' , 'is it car?' , 'is it city?' , 'is it fruit' ,    ]
-proper_noun_9 = [       ]
+proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
 
 
 for i in proper_noun_9 :
@@ -20,6 +20,7 @@ ask_questions = input()
 # I choos 9 proper noun and first 3 is for mahdy and secend 3 for shervin and third 3 is for kiarash
 # mahdy
 def one_proper_noun():
+
 
 
 def two_proper_noun():
@@ -41,7 +42,6 @@ def five_proper_noun():
 
 def six_proper_noun():
 	
-
 
 
 #kiarash
