@@ -9,7 +9,7 @@ import datetime
 # this part is 2 lists for using in AI 
 questions_list = ['Are there twelve characters?','Is it eleven letters?','Is it ten letters?','Is not it professional?','Are there eight letters?','Are there seven letters?','Are there six letters?','Are there five letters?','Are there four letters?','Are they two letters','Are there three letters?','Is it pentagonal?','Is it hexagonal?','Is it a lozenge?','Is it a triangle?','Is it a rectangle?','Is it a square?','Is it pollen?','Can it fit in your hand?','Is it the background?','Do you crawl?','Does it fly?', 'is it big?','is it small ?','Does it fit in your pocket?','is it alive?' , 'is it man?' , 'is it woman?' , 'is it car?' , 'is it city?' , 'is it fruit' ,    ]
 proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
-
+questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , ]
 
 #this part choos one word random from proper_noun_9
 flag = True
@@ -31,7 +31,7 @@ print('in this game my AI chooses one word and you can guess it in 20 questions 
 print('rule of this game : you can just ask 20 questions , AI just should say yes or no ')
 print('ok , lets start')
 print('now you can ask questions')
-ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have')
+ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a '),replace('Does it have a', '').replace('can it ' , '').replace('Can it').replace('can it', '')
 
 
 # this part can say good night and ... to you if you want to go 
@@ -56,11 +56,8 @@ def one_proper_noun():   # its cat
 		count = count + 1
 		if count == 20 :
 			peint('ok you lose it was cat' + zone_time_part())
-		elif ask_questions == 'alive' :
+		elif ask_questions in questions_cat :
 			print('yes')
-		elif ask_questions == 'animals' or ask_questions == 'animal' :
-			print('yes')
-		elif ask_questions == 'does it have'
 
 
 
