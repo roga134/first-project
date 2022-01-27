@@ -17,6 +17,8 @@ good_weather = ['good', 'so so', 'it is not bad', 'its not bad', 'it isnt bad']
 from requests import *
 # this code will import date libery
 import datetime
+small_game2 = ['its small' , 'its small ' , 'it is small' , 'it is small ' , 'small' , 'small ' , 'Small' , 'Small ']
+True_game2 = ['its true' , 'its true ' , 'it is true ' , 'it is true' , 'true' , 'true ' , 'True' , 'True '] 
 
 
 
@@ -28,8 +30,8 @@ def hi_part():
     starting = input('')
     if starting not in hi_part_array:
         print("I said hi")
-        starting = input('')
-        if starting not in hi_part:  # in this part if you wnat to speek with my AI can undrestand
+        starting2 = input('')
+        if starting2 not in hi_part:  # in this part if you wnat to speek with my AI can undrestand
             print('do you want speek to me?')
             want_speek = input('')
             if want_speek in yes_part: # here I can undrestand do you wnat to speek with me or no
@@ -230,21 +232,63 @@ def game_one():
 
 
 def choos_game2():
-    print(
-        'game one is about numbers , AI choos one number beetween all of number and  you can choos beetween number and you shoud guess number')
+    print('game one is about numbers , AI choos one number beetween all of number and  you can choos beetween number and you shoud guess number')
     print('game 2 is about a world you can ask me 20 question and AI just answer yes or no ')
     print('now you choos 1 or 2')
     choos_game_number = input('')
     if choos_game_number in '1':
         game_one()
     elif choos_game_number in '2':
-        print('we use game 2 here')
+        game_two()
+
+# this is game 2 
+def game_two():
+    print('now you can say range and I guess ')
+    print('now enter the range , first number is first range , range is  between first number and secend number and when the number its not true  say its not true and when my number is big say its big and when my  number is small say its small ')
+    print('first number')
+    x = int(input())                   #first namber like 1
+    print('so enter secend number')
+    y = int(input())                   # secend number like 1000
+    import random
+    q = random.randint(x, y)           # is say nnumber 1 - 1000
+    print(q)                           # is can print 8 line code
+    a = input()
+    myTmp = q
+    flag = True
+    maximum =y
+    minimum =x
+    while flag == True:
+        if a in small_game2 :
+            if myTmp > minimum:
+                minimum = myTmp
+            q = random.randrange(myTmp, maximum , 1)
+            myTmp = q
+            print(q)
+
+        else:
+            if myTmp < maximum:
+                maximum = myTmp
+            q = random.randrange(minimum, myTmp , 1)
+            myTmp = q
+            print(q) 
+
+        a = input()
+
+    if a in True_game2:
+        flag = False
+        print('I am happy to underatand')
+
+
+
+
+
 
 
 # this part is game and part 2 of all
 def part_two_from_all_part():
     question_to_go_game_part()
     choos_game2()
+
 
 
 # this part is for last and good bye
