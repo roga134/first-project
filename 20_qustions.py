@@ -24,37 +24,34 @@ def one_proper_noun():
 
 
 
-def two_proper_noun():
+#def two_proper_noun():
 
 
 
-def three_proper_noun():
+#def three_proper_noun():
 
 
 
 #shervin 
-def four_proper_noun():
+#def four_proper_noun():
 	
 
 
-def five_proper_noun():
+#def five_proper_noun():
 
 
 
-def six_proper_noun():
+#def six_proper_noun():
 	
 
 
 #kiarash
-def seven_proper_noun():
+#def seven_proper_noun():
 	
 
 
-def eight_proper_noun():
+#def eight_proper_noun():
 
 
 
-def nine_proper_noun():
-
-
-
+#def nine_proper_noun():
