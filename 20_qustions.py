@@ -55,7 +55,7 @@ def one_proper_noun():   # its cat
 	while :
 		count = count + 1
 		if count == 20 :
-			peint('ok you lose it was cat' + zone_time_part())
+			print('ok you lose it was cat' + zone_time_part())
 		elif ask_questions in questions_cat :
 			print('yes')
 
