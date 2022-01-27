@@ -7,6 +7,7 @@ proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'
 
 
 for i in proper_noun_9 :
+	print(i)
 
 
 #this print just mean rule of 20 questions 
