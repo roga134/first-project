@@ -9,7 +9,7 @@ import datetime
 # this part is 2 lists for using in AI 
 questions_list = [ 'is it alive?' , 'is it man?' , 'is it woman?' , 'is it car?' , 'is it city?' , 'is it fruit' ,    ]
 proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
-questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' ,]
+questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , ]
 
 #this part choos one word random from proper_noun_9
 flag = True
@@ -58,17 +58,6 @@ def one_proper_noun():   # its cat
 			peint('ok you lose it was cat' + zone_time_part())
 		elif ask_questions in questions_cat :
 			print('yes')
-		elif ask_questions == 'feet':
-			print('yes')
-		elif ask_questions == '4 feet' :
-			print('yes')
-		elif ask_questions == 'four feet' :
-			print('yes')
-		elif ask_questions == 'wool' :
-			print('yes')
-		elif ask_questions == 'short wool' :
-			print('yes')
-		elif ask_questions == ''
 
 
 
