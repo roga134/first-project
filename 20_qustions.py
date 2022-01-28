@@ -2,6 +2,7 @@
 yes_part = ['yes', "Yes", "ya", 'Ya', 'yeap', 'Yeap', 'yeah', 'Yeah', 'ok', 'Ok', 'no Im ok', 'no I am ok','I can continue', 'please continue', 'continue', 'I know', 'I know ', 'of course ', 'of course','Of course ', 'Of course', 'yea', 'Yea', 'some', 'lot', 'know', 'maby', 'yes,I do.', 'yes, I do','yes I do', 'I do']
 #this code will import random for AI
 import random
+import datetime
 
 
 
@@ -30,7 +31,7 @@ print('in this game my AI chooses one word and you can guess it in 20 questions 
 print('rule of this game : you can just ask 20 questions , AI just should say yes or no ')
 print('ok , lets start')
 print('now you can ask questions')
-ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '')
+ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have')
 
 
 # this part can say good night and ... to you if you want to go 
@@ -59,7 +60,7 @@ def one_proper_noun():   # its cat
 			print('yes')
 		elif ask_questions == 'animals' or ask_questions == 'animal' :
 			print('yes')
-		elif ask_questions == ''
+		elif ask_questions == 'does it have'
 
 
 
