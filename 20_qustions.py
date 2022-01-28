@@ -9,7 +9,7 @@ import datetime
 # this part is 2 lists for using in AI 
 questions_list = [ 'is it alive?' , 'is it man?' , 'is it woman?' , 'is it car?' , 'is it city?' , 'is it fruit' ,    ]
 proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
-questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , ]
+questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , 'made sound' , 'make sound']
 
 #this part choos one word random from proper_noun_9
 flag = True
@@ -52,7 +52,7 @@ def zone_time_part():
 # mahdy
 def one_proper_noun():   # its cat
 	count = 0 
-	while :
+	while 1 == 1:
 		count = count + 1
 		if count == 20 :
 			peint('ok you lose it was cat' + zone_time_part())
