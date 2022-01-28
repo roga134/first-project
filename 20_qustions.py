@@ -7,7 +7,7 @@ import datetime
 
 
 # this part is 2 lists for using in AI 
-questions_list = [ 'is it alive?' , 'is it man?' , 'is it woman?' , 'is it car?' , 'is it city?' , 'is it fruit' ,    ]
+questions_list = ['Are there twelve characters?','Is it eleven letters?','Is it ten letters?','Is not it professional?','Are there eight letters?','Are there seven letters?','Are there six letters?','Are there five letters?','Are there four letters?','Are they two letters','Are there three letters?','Is it pentagonal?','Is it hexagonal?','Is it a lozenge?','Is it a triangle?','Is it a rectangle?','Is it a square?','Is it pollen?','Can it fit in your hand?','Is it the background?','Do you crawl?','Does it fly?', 'is it big?','is it small ?','Does it fit in your pocket?','is it alive?' , 'is it man?' , 'is it woman?' , 'is it car?' , 'is it city?' , 'is it fruit' ,    ]
 proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
 questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , 'made sound' , 'make sound']
 
