@@ -19,6 +19,7 @@ if flag == True :
 	random_word = random.sample(proper_noun_9 , k = 1)
 	for i in random_word :
 		flag = False
+print(i)
 
 
 #this print just mean rule of 20 questions 
@@ -27,37 +28,42 @@ print('in this game my AI chooses one word and you can guess it in 20 questions 
 print('rule of this game : you can just ask 20 questions , AI just should say yes or no ')
 print('ok , lets start')
 print('now you can ask questions')
-ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a '),replace('Does it have a', '').replace('can it ' , '').replace('Can it').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ').replace('its')
 
 # this part can say good night and ... to you if you want to go 
 def zone_time_part():
     date_now = datetime.datetime.now()
     time_now = float(date_now.strftime("%H"))
     if time_now >= 5 and time_now <= 10 :
-        print('good morning')
+        print('ok you lose it was cat and good morning')
+        exit()
     elif time_now >= 11 and time_now <= 16 :
-        print('good noon')
+        print('ok you lose it was cat and good noon')
+        exit()
     elif time_now >= 17 and time_now <= 21 :
-        print('good after noon')
+        print('ok you lose it was cat and good after noon')
+        exit()
     else :
-        print('good night')
+        print('ok you lose it was cat and good night')
+        exit()
 
 
 # I choos 9 proper noun and first 3 is for mahdy and secend 3 for shervin and third 3 is for kiarash
 # mahdy
 def one_proper_noun():   # its cat
+	ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
 	count = 0 
 	while 1 == 1:
 		count = count + 1
 		if count == 20 :
-			print('ok you lose it was cat' + zone_time_part())
+			print(zone_time_part())
 		elif ask_questions in questions_cat :
 			print('yes')
 		elif ask_questions == 'cat':
 			print('nice its correct')
 		else :
 			print('no')
-		ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a '),replace('Does it have a', '').replace('can it ' , '').replace('Can it').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ').replace('its')
+		ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+
 
 
 
