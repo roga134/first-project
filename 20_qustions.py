@@ -9,7 +9,7 @@ import datetime
 # this part is 2 lists for using in AI 
 questions_list = [ 'is it alive?' , 'is it man?' , 'is it woman?' , 'is it car?' , 'is it city?' , 'is it fruit' ,    ]
 proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
-
+questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' ,]
 
 #this part choos one word random from proper_noun_9
 flag = True
@@ -31,7 +31,7 @@ print('in this game my AI chooses one word and you can guess it in 20 questions 
 print('rule of this game : you can just ask 20 questions , AI just should say yes or no ')
 print('ok , lets start')
 print('now you can ask questions')
-ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have')
+ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a '),replace('Does it have a', '').replace('can it ' , '').replace('Can it').replace('can it', '')
 
 
 # this part can say good night and ... to you if you want to go 
@@ -56,11 +56,19 @@ def one_proper_noun():   # its cat
 		count = count + 1
 		if count == 20 :
 			peint('ok you lose it was cat' + zone_time_part())
-		elif ask_questions == 'alive' :
+		elif ask_questions in questions_cat :
 			print('yes')
-		elif ask_questions == 'animals' or ask_questions == 'animal' :
+		elif ask_questions == 'feet':
 			print('yes')
-		elif ask_questions == 'does it have'
+		elif ask_questions == '4 feet' :
+			print('yes')
+		elif ask_questions == 'four feet' :
+			print('yes')
+		elif ask_questions == 'wool' :
+			print('yes')
+		elif ask_questions == 'short wool' :
+			print('yes')
+		elif ask_questions == ''
 
 
 
