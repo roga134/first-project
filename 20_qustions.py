@@ -8,10 +8,9 @@ import datetime
 
 
 # this part is 2 lists for using in AI 
-questions_list = ['is it alive?' , 'is it man?' , 'is it woman?' , 'is it car?' , 'is it city?' , 'is it fruit' ,    ]
 proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
-questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , 'made sound' , 'make sound' , '3 letters' , 'three letters' , 'run' , 'walk' , '3 characters' , 'three characters']
-
+questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , 'made sound' , 'make sound' , '3 letters' , 'three letters' , 'run' , 'walk' , '3 characters' , 'three characters' , 'meat eater' , 'mammals' , 'mammal' ,  'small body' , 'pet' , 'pets' , 'domestic' , 'domestics' , 'pet animals']
+questions_book = ['' ]
 
 #this part choos one word random from proper_noun_9
 flag = True
@@ -19,6 +18,8 @@ if flag == True :
 	random_word = random.sample(proper_noun_9 , k = 1)
 	for i in random_word :
 		flag = False
+
+
 print(i)
 
 
@@ -34,16 +35,16 @@ def zone_time_part():
     date_now = datetime.datetime.now()
     time_now = float(date_now.strftime("%H"))
     if time_now >= 5 and time_now <= 10 :
-        print('ok you lose it was cat and good morning')
+        print('good morning')
         exit()
     elif time_now >= 11 and time_now <= 16 :
-        print('ok you lose it was cat and good noon')
+        print('good noon')
         exit()
     elif time_now >= 17 and time_now <= 21 :
-        print('ok you lose it was cat and good after noon')
+        print('good after noon')
         exit()
     else :
-        print('ok you lose it was cat and good night')
+        print('good night')
         exit()
 
 
@@ -55,11 +56,13 @@ def one_proper_noun():   # its cat
 	while 1 == 1:
 		count = count + 1
 		if count == 20 :
+			print('ok you lose it was cat')
 			print(zone_time_part())
 		elif ask_questions in questions_cat :
 			print('yes')
 		elif ask_questions == 'cat':
 			print('nice its correct')
+			print(zone_time_part())
 		else :
 			print('no')
 		ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
@@ -68,7 +71,24 @@ def one_proper_noun():   # its cat
 
 
 
-#def two_proper_noun():
+def two_proper_noun(): # book
+	ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+	count = 0
+	while 1 = 1 :
+		count = count + 1
+		if count == 20 :
+			print('ok you lose it was book')
+			print(zone_time_part())
+		elif ask_questions in questions_book :
+			print('yes')
+		elif ask_questions == 'book' :
+			print('nice its correct')
+			print(zone_time_part())
+		else :
+			print('no')
+		ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+
+
 
 
 
@@ -130,6 +150,3 @@ elif i == 'university' :
 	eight_proper_noun()
 elif i == 'photography' :
 	nine_proper_noun()
-
-
-
