@@ -83,7 +83,7 @@ def one_proper_noun():   # its cat
 def two_proper_noun(): # book
 	ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
 	count = 0
-	while 1 = 1 :
+	while 1 == 1 :
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was book')
