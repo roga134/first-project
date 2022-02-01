@@ -17,8 +17,8 @@ questions_guitar = [ ' ']
 questions_giraffe = [ '' ]
 questions_keyboard = [ '' ]
 # kiarash
-questions_Bill_Gates = [ '' ]
-questions_university = [ '' ]
+questions_Bill_Gates  = [ '' ]
+questions_university  = [ '' ]
 questions_photography = [ '' ]
 
 #this part choos one word random from proper_noun_9
