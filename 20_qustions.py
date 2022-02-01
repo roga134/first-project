@@ -11,6 +11,13 @@ import datetime
 proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
 questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , 'made sound' , 'make sound' , '3 letters' , 'three letters' , 'run' , 'walk' , '3 characters' , 'three characters' , 'meat eater' , 'mammals' , 'mammal' ,  'small body' , 'pet' , 'pets' , 'domestic' , 'domestics' , 'pet animals']
 questions_book = ['' ]
+questions_dress = [ '']
+questions_guitar = [ ' ']
+questions_giraffe = [ '' ]
+questions_keyboard = [ '' ]
+questions_Bill_Gates = [ '' ]
+questions_university = [ '' ]
+questions_photography = [ '' ]
 
 #this part choos one word random from proper_noun_9
 flag = True
@@ -94,7 +101,25 @@ def two_proper_noun(): # book
 
 
 
-#def three_proper_noun():
+def three_proper_noun(): # its dress
+	ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+	count = 0 
+	while 1 == 1:
+		count = count + 1
+		if count == 20 :
+			print('ok you lose it was cat')
+			print(zone_time_part())
+		elif ask_questions in questions_dress :
+			print('yes')
+		elif ask_questions == 'dress':
+			print('nice its correct')
+			print(zone_time_part())
+		else :
+			print('no')
+		ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+
+	
+
 	
 
 
