@@ -124,34 +124,133 @@ def three_proper_noun(): # its dress
 
 
 #shervin 
-#def four_proper_noun():
-	
+def four_proper_noun(): # guitar
+	ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+	count = 0 
+	while 1 == 1:
+		count = count + 1
+		if count == 20 :
+			print('ok you lose it was cat')
+			print(zone_time_part())
+		elif ask_questions in questions_guitar :
+			print('yes')
+		elif ask_questions == 'guitar':
+			print('nice its correct')
+			print(zone_time_part())
+		else :
+			print('no')
+		ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
 
 	
 
-#def five_proper_noun():
+	
+
+def five_proper_noun(): # giraffe
+	ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+	count = 0 
+	while 1 == 1:
+		count = count + 1
+		if count == 20 :
+			print('ok you lose it was cat')
+			print(zone_time_part())
+		elif ask_questions in questions_giraffe :
+			print('yes')
+		elif ask_questions == 'giraffe':
+			print('nice its correct')
+			print(zone_time_part())
+		else :
+			print('no')
+		ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+
 	
 
 
 
-#def six_proper_noun():
+def six_proper_noun(): # keyboard 
+	ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+	count = 0 
+	while 1 == 1:
+		count = count + 1
+		if count == 20 :
+			print('ok you lose it was cat')
+			print(zone_time_part())
+		elif ask_questions in questions_keyboard :
+			print('yes')
+		elif ask_questions == 'keyboard':
+			print('nice its correct')
+			print(zone_time_part())
+		else :
+			print('no')
+		ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+
+	
 	
 	
 
 
 #kiarash
-#def seven_proper_noun():
-	
+def seven_proper_noun(): # Bill Gates
+	ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+	count = 0 
+	while 1 == 1:
+		count = count + 1
+		if count == 20 :
+			print('ok you lose it was cat')
+			print(zone_time_part())
+		elif ask_questions in questions_Bill_Gates :
+			print('yes')
+		elif ask_questions == 'Bill Gates':
+			print('nice its correct')
+			print(zone_time_part())
+		else :
+			print('no')
+		ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
 
 	
 
+	
 
-#def eight_proper_noun():
+
+def eight_proper_noun(): # university
+	ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+	count = 0 
+	while 1 == 1:
+		count = count + 1
+		if count == 20 :
+			print('ok you lose it was cat')
+			print(zone_time_part())
+		elif ask_questions in questions_university :
+			print('yes')
+		elif ask_questions == 'university':
+			print('nice its correct')
+			print(zone_time_part())
+		else :
+			print('no')
+		ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+
 	
 
 
 
-#def nine_proper_noun():
+def nine_proper_noun(): # photography
+	ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+	count = 0 
+	while 1 == 1:
+		count = count + 1
+		if count == 20 :
+			print('ok you lose it was cat')
+			print(zone_time_part())
+		elif ask_questions in questions_photography :
+			print('yes')
+		elif ask_questions == 'photography':
+			print('nice its correct')
+			print(zone_time_part())
+		else :
+			print('no')
+		ask_questions = input().replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '')
+
+
+
 	
 
 
