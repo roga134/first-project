@@ -12,9 +12,11 @@ proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'
 questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , 'made sound' , 'make sound' , '3 letters' , 'three letters' , 'run' , 'walk' , '3 characters' , 'three characters' , 'meat eater' , 'mammals' , 'mammal' ,  'small body' , 'pet' , 'pets' , 'domestic' , 'domestics' , 'pet animals']
 questions_book = ['' ]
 questions_dress = [ '']
+# shervin 
 questions_guitar = [ ' ']
 questions_giraffe = [ '' ]
 questions_keyboard = [ '' ]
+# kiarash
 questions_Bill_Gates = [ '' ]
 questions_university = [ '' ]
 questions_photography = [ '' ]
