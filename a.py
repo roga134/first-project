@@ -6,7 +6,8 @@ import datetime
 from time import *
 bale_part = ['BALE' , 'bale' , 'bale ' , 'BALE ' , 'Bale ' , 'Bale',' BALE' , 'bAlE' , ' bAlE' , 'bAlE ' , 'BaLe' , ' BaLe' , 'BaLe ' , ' Bale' , 'Bale ' , 'bAle' , ' bAle' , 'bAle ' , 'baLe' , ' baLe' , 'baLe ' , 'balE' , ' balE' , 'balE ' ]
 salam_part = ['salam' , 'Salam' , 'sAlam' , 'saLam' , 'salAm' , 'salaM' , 'SaLaM' , 'sAlAm' , 'SALAM' ]
-harf_part = ['HARF BEZANIM' , 'Harfbezanim' , 'hArfbezanim' , 'haRfbezanim' , 'harFbezanim' , 'harfBezanim' , 'harfbEzanim' , 'hafrbeZanim' , 'hafrbezAnim' , 'harfbezaNim' , 'harfbezanIm' , 'harfbezaniM' , ' harfbezanim' , 'harfbezanim ' , 'h a r f b e z a n i m']
+harf_part = ['HARF BEZANIM' , 'Harfbezanim' , 'hArfbezanim' , 'haRfbezanim' , 'harFbezanim' , 'harfBezanim' , 'harfbEzanim' , 'hafrbeZanim' , 'hafrbezAnim' , 'harfbezaNim' , 'harfbezanIm' , 'harfbezaniM' , ' harfbezanim' , 'harfbezanim ' , 'h a r f b e z a n i m' , 'H A R F B E Z A N I M' , 'H a r f b e z a n i m' , 'h A r f b e z a n i m' , 'h a R f b e z a n i m' , 'h a r F b e z a n i m' , 'h a r f B e z a n i m' , 'h a r f b E z a n i m' , 'h a r f b e Z a n i m' , 'h a r f b e z A n i m' , 'h a r f b e z a N i m' , 'h a r f b e z a n I m' , 'h a r f b e z a n i M' ]
+game_part = ['']
 print("salam")
 z = input("")
 
