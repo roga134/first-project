@@ -17,9 +17,9 @@ questions_guitar = [ ' ']
 questions_giraffe = [ '' ]
 questions_keyboard = [ '' ]
 # kiarash
-questions_Bill_Gates  = [ '' ]
-questions_university  = [ '' ]
-questions_photography = [ '' ]
+questions_Bill_Gates  = [ 'alive' , '4 feet' , '2 hands' , 'Money' , 'Owned by Microsoft' , 'It has wisdom' , 'It has a brain' , 'Is thinking' , 'He thinks' , 'She thinks' , 'Human' , 'Celebrity' , 'He is almost old' , 'She is almost old' , 'is dead' , 'Has a house' , 'He has a car' , 'She has a car']
+questions_university  = [ 'Buildings' , 'Makane' , 'You s too much' , 'We study there' , 'Men and women study there' ]
+questions_photography = [ 'Job' , 'Makane' , 'A place to take pictures'  ]
 
 #this part choos one word random from proper_noun_9
 flag = True
