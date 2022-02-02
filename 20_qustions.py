@@ -9,16 +9,16 @@ import datetime
 
 # this part is 2 lists for using in AI 
 proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
-questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , 'made sound' , 'make sound' , '3 letters' , 'three letters' , 'run' , 'walk' , '3 characters' , 'three characters' , 'meat eater' , 'mammals' , 'mammal' ,  'small body' , 'pet' , 'pets' , 'domestic' , 'domestics' , 'pet animals']
+questions_cat = ['alive' , 'animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , 'made sound' , 'make sound' , '3 letters' , 'three letters' , 'run' , 'walk' , '3 characters' , 'three characters' , 'meat eater' , 'mammals' , 'mammal' ,  'small body' , 'pet' , 'pets' , 'domestic' , 'domestics' , 'pet animals' , '4feet']
 questions_book = ['' ]
 questions_dress = [ '']
 # shervin 
-questions_guitar = [ ' ']
+questions_guitar = ['']
 questions_giraffe = [ '' ]
 questions_keyboard = [ '' ]
 # kiarash
 questions_Bill_Gates  = [ 'alive' , '2 feet' , '2 hands' , 'Money' , 'Owned by Microsoft' , 'It has wisdom' , 'It has a brain' , 'Is thinking' , 'He thinks' , 'She thinks' , 'Human' , 'Celebrity' , 'He is almost old'  , 'is dead' , 'Has a house' , 'He has a car' , 'Is he an American citizen?' , 'Is that continent America?' , 'Is he 70 years old?' , 'His name was in the time of William Henry Gates III?' , 'His wife s name is Melinda Gates' , 'His father s nameWilliam H. Is there a gates? , Her mother s name is Mary Maxwell' , 'a place to take photo' , 'Is Bill Gates car expensive?' , 'Bill Gates s net worth of $ 134 billion' , 'Will Bill Gates pay for charity?' , 'Was Bill Gates the richest man in the world in 1994?' , 'In 2010 he became the second richest man in the world?' , 'After four years, he lost his position and reached the second place?' , 'Do 61,000 employees work under him?' , 'Do they want a degree to get a job in his company?']
-questions_university  = [ 'Buildings' , 'Makane' , 'You s too much' , 'We study there' , 'Men and women study there' ]
+questions_university  = [ 'Buildings' , 'Makane' , 'You s too much' , 'We study there' , 'Men and women study there' , 'Is studying there free?' , 'The  offers  degrees at associate, bachelor, master and doctoral levels and in various fields.?' , 'The first university was built in Italy.' , 'Universities in Germany and France were considered as role models. German model or Humboldt model started by Wilhelm von Humboldt?' ]
 questions_photography = [ 'Job' , 'Makane' , 'A place to take pictures'  ]
 
 #this part choos one word random from proper_noun_9
