@@ -6,61 +6,16 @@ import datetime
 from time import *
 bale_part = ['BALE' , 'bale' , 'bale ' , 'BALE ' , 'Bale ' , 'Bale',' BALE' , 'bAlE' , ' bAlE' , 'bAlE ' , 'BaLe' , ' BaLe' , 'BaLe ' , ' Bale' , 'Bale ' , 'bAle' , ' bAle' , 'bAle ' , 'baLe' , ' baLe' , 'baLe ' , 'balE' , ' balE' , 'balE ' ]
 salam_part = ['salam' , 'Salam' , 'sAlam' , 'saLam' , 'salAm' , 'salaM' , 'SaLaM' , 'sAlAm' , 'SALAM' ]
-
+harf_part = ['HARF BEZANIM' , 'Harfbezanim' , 'hArfbezanim' , 'haRfbezanim' , 'harFbezanim' , 'harfBezanim' , 'harfbEzanim' , 'hafrbeZanim' , 'hafrbezAnim' , 'harfbezaNim' , 'harfbezanIm' , 'harfbezaniM' , ' harfbezanim' , 'harfbezanim ' , 'h a r f b e z a n i m']
 print("salam")
 z = input("")
 
+print("mi khoy bazi koni ? ya mi khoy kami baham harf bezanim")
+bazi=input('')
 
-
-print("nam karbari khodeto type kon?")
-a=input("")
-print("nam karbari" , a)
-print("ahle kojai? ahale iran hasti?")
-b=input("")
-
-if b in bale_part :
-    print("khosh bakhtim")
-
-
-
-
-print("aya mi khohi havae amroz ro behet nshon bedam?")
-c=input("")
-
-
-def api():
-    pr = print('do want to undrestand weather of you city?')
-    city = input()
-    if city in bale_part:
-        print('ok tell me your city')
-    else :
-        exit()
-    city2 = str(input())
-    c = city2[:1]
-    oo = str.upper(c)
-    pq = city2.replace(oo , c)
-    pasokh = get("https://api.openweathermap.org/data/2.5/weather?q="+pq+"&appid=33b6279f4b2c6787c70a5e62120ccbb6")
-    o = pasokh.json()
-    return o    
-
-print(api())
-
-def time_part():
-    print("aya mi khahid zaman ro be shoma neshon bedam?")
-    z = input("")
-    if z in bale_part :
-        print("zaman va saat")
-    date_now = datetime.datetime.now()
-    time_now = date_now.strftime("%H")
-    if z in bale_part :
-        print(date_now)
-    else :
-        print('bash')
-time_part()
-
-
-
-print("aya mi khohi bazi koni?")
+if bazi == 
+def game_pro():
+    print("aya mi khohi bazi koni?")
 d = input("")
 
 if d in bale_part :
@@ -210,5 +165,54 @@ print("sazandeghan in bazi")
 print("kiarash noroozi : kod hai bazi ro neveshte")
 print("bazi ro estadio k.n.p sakhte")
 print("omidvaram az bazi ma lezat borde bashid")
+
+
+
+
+print("nam karbari khodeto type kon?")
+a=input("")
+print("nam karbari" , a)
+print("ahle kojai? ahale iran hasti?")
+b=input("")
+
+if b in bale_part :
+    print("khosh bakhtim")
+
+
+
+
+print("aya mi khohi havae amroz ro behet nshon bedam?")
+c=input("")
+
+
+def api():
+    pr = print('do want to undrestand weather of you city?')
+    city = input()
+    if city in bale_part:
+        print('ok tell me your city')
+    else :
+        exit()
+    city2 = str(input())
+    c = city2[:1]
+    oo = str.upper(c)
+    pq = city2.replace(oo , c)
+    pasokh = get("https://api.openweathermap.org/data/2.5/weather?q="+pq+"&appid=33b6279f4b2c6787c70a5e62120ccbb6")
+    o = pasokh.json()
+    return o    
+
+print(api())
+
+def time_part():
+    print("aya mi khahid zaman ro be shoma neshon bedam?")
+    z = input("")
+    if z in bale_part :
+        print("zaman va saat")
+    date_now = datetime.datetime.now()
+    time_now = date_now.strftime("%H")
+    if z in bale_part :
+        print(date_now)
+    else :
+        print('bash')
+time_part()
 
 
