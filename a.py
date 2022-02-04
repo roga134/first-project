@@ -1,4 +1,7 @@
-
+from tkinter import *
+import tkinter.font
+import tkinter as tk
+from tkinter import ttk
 from math import *
 from this import d
 from requests import *
@@ -227,6 +230,8 @@ def time_part():
         print(date_now)
     else :
         print('bash')
+
+
 time_part()
 
 game_pro()
