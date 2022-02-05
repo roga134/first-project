@@ -58,13 +58,12 @@ def zone_time_part():
         print('good night')
         exit()
 
-# its for input
-def aks_questions1 ():
-	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+
 
 # I choos 9 proper noun and first 3 is for mahdy and secend 3 for shervin and third 3 is for kiarash
 # mahdy
 def one_proper_noun():   # its cat 
+	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
 		if count == 1 :
@@ -80,7 +79,8 @@ def one_proper_noun():   # its cat
 			print(zone_time_part())
 		else :
 			print('no')
-		aks_questions1()
+		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+
 		
 
 
@@ -88,6 +88,7 @@ def one_proper_noun():   # its cat
 
 
 def two_proper_noun(): # book
+	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0
 	while 1 == 1 :
 		if count == 1 :
@@ -103,7 +104,8 @@ def two_proper_noun(): # book
 			print(zone_time_part())
 		else :
 			print('no')
-		aks_questions1()
+		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+
 		
 
 
@@ -111,6 +113,7 @@ def two_proper_noun(): # book
 
 
 def three_proper_noun(): # its dress
+	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
 		if count == 1 :
@@ -126,7 +129,8 @@ def three_proper_noun(): # its dress
 			print(zone_time_part())
 		else :
 			print('no')
-		aks_questions1()
+		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+
 
 	
 
@@ -135,6 +139,7 @@ def three_proper_noun(): # its dress
 
 #shervin 
 def four_proper_noun(): # guitar
+	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
 		if count == 1 :
@@ -150,13 +155,15 @@ def four_proper_noun(): # guitar
 			print(zone_time_part())
 		else :
 			print('no')
-		aks_questions1()
+		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+
 
 	
 
 	
 
 def five_proper_noun(): # giraffe
+	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
 		if count == 1 :
@@ -172,12 +179,14 @@ def five_proper_noun(): # giraffe
 			print(zone_time_part())
 		else :
 			print('no')
-		aks_questions1()
+		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+
 	
 
 
 
 def six_proper_noun(): # keyboard 
+	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
 		if count == 1 :
@@ -193,7 +202,8 @@ def six_proper_noun(): # keyboard
 			print(zone_time_part())
 		else :
 			print('no')
-		aks_questions1()
+		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+
 
 	
 	
@@ -202,6 +212,7 @@ def six_proper_noun(): # keyboard
 
 #kiarash
 def seven_proper_noun(): # Bill Gates
+	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
 		if count == 1 :
@@ -217,7 +228,8 @@ def seven_proper_noun(): # Bill Gates
 			print(zone_time_part())
 		else :
 			print('no')
-		aks_questions1()
+		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+
 
 	
 
@@ -225,6 +237,7 @@ def seven_proper_noun(): # Bill Gates
 
 
 def eight_proper_noun(): # university
+	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
 		if count == 1 :
@@ -240,7 +253,8 @@ def eight_proper_noun(): # university
 			print(zone_time_part())
 		else :
 			print('no')
-		aks_questions1()
+		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+
 
 	
 
@@ -250,10 +264,9 @@ def eight_proper_noun(): # university
 
 
 def nine_proper_noun(): # photography
+	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
-		if count == 1 :
-			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -265,7 +278,8 @@ def nine_proper_noun(): # photography
 			print(zone_time_part())
 		else :
 			print('no')
-		aks_questions1()
+		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+
 
 
 
