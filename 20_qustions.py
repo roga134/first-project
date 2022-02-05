@@ -10,7 +10,7 @@ import datetime
 # this part is 2 lists for using in AI 
 proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
 questions_cat = ['alive' , 'cute' , 'short neck' , 'short dam','animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , 'made sound' , 'make sound' , '3 letters' , 'three letters' , 'run' , 'walk' , '3 characters' , 'three characters' , 'meat eater' , 'mammals' , 'mammal' ,  'small body' , 'pet' , 'pets' , 'domestic' , 'domestics' , 'pet animals' , '4feet']
-questions_book = ['' ]
+questions_book = ['things' , 'thing' , 'for read' ]
 questions_dress = [ '']
 # shervin 
 questions_guitar = ['things' , 'music' , 'the wire' , 'nylon' , 'head' , 'tuning keys' , 'nut' , 'frets' , 'nech' , 'fret board' , ' upper bout' , 'rossette' , 'sound hole' , 'bridge saddle' , 'body' , 'bridge' , 'lower bout' , 'sound bord' , '6sim' , 'headstock' , 'nut' , ' machine heads ' , 'frets ', 'truss rod' , 'lnlays' , 'neck and fretboard ' , 'neck joint' , ' body' , ' pickups ' , 'electronics' ,'bridge' , 'stop tailpiece' , 'pickguard' , 'toggle' , 'switch']
@@ -38,6 +38,8 @@ print('in this game my AI chooses one word and you can guess it in 20 questions 
 print('rule of this game : you can just ask 20 questions , AI just should say yes or no ')
 print('ok , lets start')
 print('now you can ask questions')
+ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+
 
 # this part can say good night and ... to you if you want to go 
 def zone_time_part():
@@ -57,15 +59,16 @@ def zone_time_part():
         exit()
 
 # its for input
-def aks_questions():
-	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ').replace(' is he ' , '').replace('is there' , '').replace('is there for').replace(' is here' , '').replace(' is there ').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
+def aks_questions1 ():
+	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 
 # I choos 9 proper noun and first 3 is for mahdy and secend 3 for shervin and third 3 is for kiarash
 # mahdy
-def one_proper_noun():   # its cat
-	ask_questions()
+def one_proper_noun():   # its cat 
 	count = 0 
 	while 1 == 1:
+		if count == 1 :
+			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -77,16 +80,18 @@ def one_proper_noun():   # its cat
 			print(zone_time_part())
 		else :
 			print('no')
-		ask_questions()
+		aks_questions1()
+		
 
 
 
 
 
 def two_proper_noun(): # book
-	ask_questions()
 	count = 0
 	while 1 == 1 :
+		if count == 1 :
+			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was book')
@@ -98,18 +103,18 @@ def two_proper_noun(): # book
 			print(zone_time_part())
 		else :
 			print('no')
-		ask_questions()
-
-
+		aks_questions1()
+		
 
 
 
 
 
 def three_proper_noun(): # its dress
-	ask_questions()
 	count = 0 
 	while 1 == 1:
+		if count == 1 :
+			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -121,7 +126,7 @@ def three_proper_noun(): # its dress
 			print(zone_time_part())
 		else :
 			print('no')
-		ask_questions()
+		aks_questions1()
 
 	
 
@@ -130,9 +135,10 @@ def three_proper_noun(): # its dress
 
 #shervin 
 def four_proper_noun(): # guitar
-	ask_questions()
 	count = 0 
 	while 1 == 1:
+		if count == 1 :
+			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -144,16 +150,17 @@ def four_proper_noun(): # guitar
 			print(zone_time_part())
 		else :
 			print('no')
-		ask_questions()
+		aks_questions1()
 
 	
 
 	
 
 def five_proper_noun(): # giraffe
-	ask_questions()
 	count = 0 
 	while 1 == 1:
+		if count == 1 :
+			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -165,16 +172,16 @@ def five_proper_noun(): # giraffe
 			print(zone_time_part())
 		else :
 			print('no')
-		ask_questions()
-
+		aks_questions1()
 	
 
 
 
 def six_proper_noun(): # keyboard 
-	ask_questions()
 	count = 0 
 	while 1 == 1:
+		if count == 1 :
+			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -186,7 +193,7 @@ def six_proper_noun(): # keyboard
 			print(zone_time_part())
 		else :
 			print('no')
-		ask_questions()
+		aks_questions1()
 
 	
 	
@@ -195,9 +202,10 @@ def six_proper_noun(): # keyboard
 
 #kiarash
 def seven_proper_noun(): # Bill Gates
-	ask_questions()
 	count = 0 
 	while 1 == 1:
+		if count == 1 :
+			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -209,7 +217,7 @@ def seven_proper_noun(): # Bill Gates
 			print(zone_time_part())
 		else :
 			print('no')
-		ask_questions()
+		aks_questions1()
 
 	
 
@@ -217,9 +225,10 @@ def seven_proper_noun(): # Bill Gates
 
 
 def eight_proper_noun(): # university
-	ask_questions()
 	count = 0 
 	while 1 == 1:
+		if count == 1 :
+			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -231,16 +240,20 @@ def eight_proper_noun(): # university
 			print(zone_time_part())
 		else :
 			print('no')
-		ask_questions()
+		aks_questions1()
+
+	
+
 
 	
 
 
 
 def nine_proper_noun(): # photography
-	ask_questions()
 	count = 0 
 	while 1 == 1:
+		if count == 1 :
+			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -252,7 +265,7 @@ def nine_proper_noun(): # photography
 			print(zone_time_part())
 		else :
 			print('no')
-		ask_questions()
+		aks_questions1()
 
 
 
