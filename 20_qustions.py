@@ -65,8 +65,6 @@ def one_proper_noun():   # its cat
 	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
-		if count == 1 :
-			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -90,8 +88,6 @@ def two_proper_noun(): # book
 	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0
 	while 1 == 1 :
-		if count == 1 :
-			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was book')
@@ -115,8 +111,6 @@ def three_proper_noun(): # its dress
 	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
-		if count == 1 :
-			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -141,8 +135,6 @@ def four_proper_noun(): # guitar
 	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
-		if count == 1 :
-			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -165,8 +157,6 @@ def five_proper_noun(): # giraffe
 	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
-		if count == 1 :
-			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -188,8 +178,6 @@ def six_proper_noun(): # keyboard
 	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
-		if count == 1 :
-			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -214,8 +202,6 @@ def seven_proper_noun(): # Bill Gates
 	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
-		if count == 1 :
-			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
@@ -239,8 +225,6 @@ def eight_proper_noun(): # university
 	ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 	count = 0 
 	while 1 == 1:
-		if count == 1 :
-			aks_questions1()
 		count = count + 1
 		if count == 20 :
 			print('ok you lose it was cat')
