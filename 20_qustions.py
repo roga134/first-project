@@ -8,9 +8,9 @@ import datetime
 
 
 # this part is 2 lists for using in AI 
-proper_noun_9 = [ 'cat'  , 'book' , 'dress' , 'guitar' , 'giraffe'  , 'keyboard'  , 'Bill Gates' , 'university' , 'photography' ]
-questions_cat = ['alive' , 'cute' , 'short neck' , 'short dam','animals' , 'animal' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , 'made sound' , 'make sound' , '3 letters' , 'three letters' , 'run' , 'walk' , '3 characters' , 'three characters' , 'meat eater' , 'mammals' , 'mammal' ,  'small body' , 'pet' , 'pets' , 'domestic' , 'domestics' , 'pet animals' , '4feet']
-questions_book = ['things' , 'thing' , 'for read' ]
+proper_noun_9 = [ ' cat '  , ' book ' , ' dress ' , ' guitar ' , ' giraffe '  , ' keyboard '  , ' Bill Gates ' , ' university ' , ' photography ' ]
+questions_cat = [' alive ' , ' cute ' , ' short neck ' , ' short dam ',' animals ' , ' animal ' , ' feet ' , ' 4 feet ' , ' four feet ' , ' wool ' , ' short wool ' , ' made sound ' , ' make sound ' , ' 3 letters ' , ' three letters ' , ' run ' , ' walk ' , ' 3 characters ' , ' three characters ' , ' meat eater ' , ' mammals ' , ' mammal ' ,  ' small body ' , ' pet ' , ' pets ' , ' domestic ' , ' domestics ' , ' pet animals ' , ' 4 feet ']
+questions_book = [' things ' , ' thing ' , ' for read ' ]
 questions_dress = [ '']
 # shervin 
 questions_guitar = ['things' , 'music' , 'the wire' , 'nylon' , 'head' , 'tuning keys' , 'nut' , 'frets' , 'nech' , 'fret board' , ' upper bout' , 'rossette' , 'sound hole' , 'bridge saddle' , 'body' , 'bridge' , 'lower bout' , 'sound bord' , '6sim' , 'headstock' , 'nut' , ' machine heads ' , 'frets ', 'truss rod' , 'lnlays' , 'neck and fretboard ' , 'neck joint' , ' body' , ' pickups ' , 'electronics' ,'bridge' , 'stop tailpiece' , 'pickguard' , 'toggle' , 'switch']
