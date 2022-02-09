@@ -56,6 +56,7 @@ def feeling_part():
         else:
             exit('good bye')
 
+##########################################################################
 
 # this part AI can undrestand whats your name
 def name_part():
