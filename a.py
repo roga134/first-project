@@ -1,4 +1,3 @@
-
 from math import *
 from this import d
 from requests import *
@@ -10,24 +9,72 @@ salam_part = ['salam' , 'Salam' , 'sAlam' , 'saLam' , 'salAm' , 'salaM' , 'SaLaM
 harf_part = ['HARF BEZANIM' , 'Harfbezanim' , 'hArfbezanim' , 'haRfbezanim' , 'harFbezanim' , 'harfBezanim' , 'harfbEzanim' , 'hafrbeZanim' , 'hafrbezAnim' , 'harfbezaNim' , 'harfbezanIm' , 'harfbezaniM' , ' harfbezanim' , 'harfbezanim ' , 'h a r f b e z a n i m' , 'H A R F B E Z A N I M' , 'H a r f b e z a n i m' , 'h A r f b e z a n i m' , 'h a R f b e z a n i m' , 'h a r F b e z a n i m' , 'h a r f B e z a n i m' , 'h a r f b E z a n i m' , 'h a r f b e Z a n i m' , 'h a r f b e z A n i m' , 'h a r f b e z a N i m' , 'h a r f b e z a n I m' , 'h a r f b e z a n i M' ]
 game_part = ['bazi mi konam' , 'bazimikonam' , 'b a z i m i k o n a m' , 'Bazi mi konam' , 'BAZI MI KONAM' , 'BAZIMIKONAM']
 chekhabar_part = ['salamati' , ' salamati' , 'salamati ' , 's a l a m a t i' , 'S A L A M A T I' , ' s a l a m a t i' , 's a l a m a t i ' , 'SALAMATI']
+na_part = ['na' , 'Na' , 'nA' , 'NA' ]
+def api():
+   pr = print('do want to undrestand weather of you city?')
+   city = input("")
+   if city in bale_part:
+      print('ok tell me your city')
+   else :
+      exit()
+   city2 = str(input())
+   c = city2[:1]
+   oo = str.upper(c)
+   pq = city2.replace(oo , c)
+   pasokh = get("https://api.openweathermap.org/data/2.5/weather?q="+pq+"&appid=33b6279f4b2c6787c70a5e62120ccbb6")
+   o = pasokh.json()
+   return o    
+
+print(api())
+def time_part():
+   print("aya mi khahid zaman ro be shoma neshon bedam?")
+   z = input("")
+   if z in bale_part :
+      print("zaman va saat")
+   date_now = datetime.datetime.now()
+   time_now = date_now.strftime("%H")
+   if z in bale_part :
+      print(date_now)
+   else :
+      print('bash')
 def harf_pro () :
    print("salam")
    salam_kardan = input("")
-   print("nam karbari khodeto type kon?")
+   print("nam karbari khodeto type kon")
    a=input("")
    print("nam karbari" , a)
    print("ahle kojai? ahale iran hasti?")
    b=input("")
    if b in bale_part :
       print("khosh bakhtim")
-      
+   print("mi khoy zaman ro behet neshon bedam?")
+   poi = input("")
+   if poi in bale_part :
+      time_part()
+   else :
+      print("neshon ne mi dam")
    print("che khabar?")
    che = input("")
    if che in chekhabar_part :
       print("manam khobam")
+   print("mi khoy ab va bava ro behet nashon bedam?")
+   kia_9 = input("")
+   if kia_9 in bale_part :
+      api()
+
+   else :
+      print("nashon ne mi dam")
            
    print("az kodet begho")
    az_kodet = input("")
+   print("berim bazi konim?")
+   game_52 = input("")
+   if game_52 in na_part :
+      game_pro()
+
+   elif game_52 in bale_part :
+      game_pro()
+
 
 
 def game_pro():
@@ -180,21 +227,28 @@ z = input("")
 if z in salam_part :
     print('alikoma salam')
 
-print("mi khoy bazi koni ? ya mi khoy kami baham harf bezanim")
+print("mi khoy bazi koni?")
 bazi=input('')
+if bazi in na_part :
+   harf_pro()
 
-if bazi in harf_part :
-   harf_pro () 
+elif bazi in bale_part :
+   game_pro()
 
-if bazi in game_part :
-   game_pro ()        
+print("mi khoy ba ham harf bezanim")
+harf_85 = input("")
+if harf_85 in na_part :
+   game_pro()
+
+elif harf_85 in bale_part :
+   harf_pro()
 
 
 
 
 
-   print("aya mi khohi havae amroz ro behet nshon bedam?")
-   c=input("")
+print("aya mi khohi havae amroz ro behet nshon bedam?")
+c=input("")
 
 if bazi in game_part :
    game_pro()
@@ -206,37 +260,9 @@ if bazi in game_part :
     
 
 
-def api():
-    pr = print('do want to undrestand weather of you city?')
-    city = input()
-    if city in bale_part:
-        print('ok tell me your city')
-    else :
-        exit()
-    city2 = str(input())
-    c = city2[:1]
-    oo = str.upper(c)
-    pq = city2.replace(oo , c)
-    pasokh = get("https://api.openweathermap.org/data/2.5/weather?q="+pq+"&appid=33b6279f4b2c6787c70a5e62120ccbb6")
-    o = pasokh.json()
-    return o    
-
-print(api())
-
-def time_part():
-    print("aya mi khahid zaman ro be shoma neshon bedam?")
-    z = input("")
-    if z in bale_part :
-        print("zaman va saat")
-    date_now = datetime.datetime.now()
-    time_now = date_now.strftime("%H")
-    if z in bale_part :
-        print(date_now)
-    else :
-        print('bash')
 
 
-time_part()
 
-game_pro()
-harf_pro()
+
+
+
