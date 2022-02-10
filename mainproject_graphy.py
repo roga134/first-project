@@ -62,12 +62,7 @@ text_box6 = tk.Label(project_graphy , text = 'tnx God' , fg = 'black' , bg = '#F
 
 print(input_box1.get())
 
-#def delete_all2():
-	#text_box4.after(500 , text_box4.destroy())
-	#text_box5.after(500 , text_box5.destroy())
-	#input_box2.after(500 , input_box2.destroy())
-	#button2.after(500 , button2.destroy())
-	#text_box6.after(500 , text_box6.destroy())
+
 
 
 def new_text_world1():
