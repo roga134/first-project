@@ -6,7 +6,7 @@ int main() {
   cout << a  ;
   cout << b  ;
   cout << c  ;
-  cout << d  ;
+  cout << d  << "\n";
   int x , y;
   cout << "type your number \n" ;
   cin >> x ;
@@ -14,7 +14,7 @@ int main() {
   cin >> y ;
   ++y;
   --x;
-  cout << y << x  <<"\n" ;
+  cout << y <<"\n"<< x  <<"\n" ;
   cout << x + y << "\n" ;
   return  0;
 }
