@@ -1,0 +1,139 @@
+\n میاد یه خط پایین
+\t یه تبب جلو میره 
+"hi "how are you ?" " = erorr
+"hi \"how are you ?\" " = true
+
+
+
+import getpass
+user = getpass.getuser()
+name = "system name is kea".replace("kea" , user)# kea is example
+replace میتونه چیز های مختلف با کارایی مختلف باشه که در w3schoolوجود داره 
+
+
+
+
+import subprocess
+a = subprocess.check_output("dir /s /B *.psd" , shell = True).decode()
+b = a.replace(" " , "").splite()
+for i in b :
+	print(i)
+در اینجا میره هر فایلی که در جایی که در جلوی ای یعنی خط 2 نوشتیم میاد چاپش میکنه و در فور از حالت لیست خارج میکنه
+
+
+
+
+نوشتن یه ویروس ساده که میره پوشه اچ و تمام فایل های پی اس دی رو پاک میکنه  
+import os 
+import subprocess
+os.chdir("H")
+a = subprocess.check_output("dir /S /B *.psd" ,  shell = True).decode().splite()
+for i in a :
+	os.remove(i)
+	print("Rmoved :" + "\t" + i)
+
+
+
+این زیر برای لیست هست
+a = [ ye list]
+a.append("ye str")
+این یه چیزی اضافه میکنه 
+a.remove("ye str")
+این حذف میکنه 
+
+
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.intersection_update(y)
+print(x)
+out put = {'aplle'}
+
+
+
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.symmetric_difference_update(y)
+print(x)
+out put = {'google', 'banana', 'microsoft', 'cherry'}
+
+
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict["brand"]) # and you can use thisdict.get("brand")
+out put = Ford
+
+
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict.keys()
+print(x)
+out put = 
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = thisdict.keys()
+
+print(x)
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict.keys()
+print(x)
+out put = dict_keys(['brand', 'model', 'year']) #all string before : 
+
+
+
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.keys()
+print(x) #before the change
+car["color"] = "white"
+print(x) #after the change
+# it add color to car dir
+
+
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict.values()
+print(x)
+out put = dict_values(['Ford', 'Mustang', 1964]) # all str after :
+
+
+
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict.items()
+print(x)
+out put = dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)]) # it make part part from keys and valu
+
+
+
+Shutil Module in Python
