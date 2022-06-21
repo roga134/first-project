@@ -1,0 +1,99 @@
+b = "Hello, World!"
+print(b[2:5]) # this code say letters  2 to 4 litters and it start from zero and litters  2 to 4 is llo
+
+
+b = "Hello, World!"
+print(b[:5]) # its  litters 0 to 5 so its say Hello
+
+
+b = "Hello, World!"
+print(b[2:])# its 2 to end so it say llo, World!
+
+
+
+b = "Hello, World!"
+print(b[-5:-2])# its say from end like -2 is d and -5 is w so its say beetwee w and d and it is orl
+
+
+
+a = "Hello, World!"
+print(a.upper())# this code get big a so its say HELLO, WORLD! and when we use lower its say hello, world!
+
+
+a = "Hello, World!"
+print(a.replace("H", "J"))# this code is replace one litters or word  to diffrend litter or word or  we can delete litter or word
+
+
+
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
+
+
+
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+
+
+
+age = 36
+txt = "My name is John, I am " + age
+print(txt)# this code is no true and i say true sentens
+
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+
+# and if we want to use 2 or 3 or ... umber we use this code
+
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want {} pieces of item {} for {} dollars."
+print(myorder.format(quantity, itemno, price))
+
+
+
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)# these code is for undrestand true or false first line say true and line 2 and 3 is false
+
+and when we use bool befor unmber and string it say true because string is strint and number is number and its true but if we use main code  of python its say false like this lines
+
+print(bool(False))#false
+print(bool(None)) # false
+print(bool(0)) #false 
+print(bool("")) ..
+print(bool(())) .. 
+print(bool([])) .. 
+print(bool({})) .. 
+
+
+
+what is class
+what is _len_(self)
+
+
+
+x = 200
+print(isinstance(x, int)) # this code is for undrestand x is int or no and in this code say true because 200 is int and we can choos int str float and .... for art that we say int
+
+
+
+what is return true in thas code  and why we write def name after if
+def myFunction() :
+  return True
+
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
+
+
+what is functions
+
+
+
+
+
+
+
