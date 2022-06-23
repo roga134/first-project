@@ -14,8 +14,8 @@ questions_cat = ['alive' , 'cute' , 'short neck' , 'short dam','animals' , 'anim
 questions_book = ['things' , 'thing' , 'for read' , ' things ' , ' thing ' , ' for read ' ]
 proper_noun_9 = [ ' cat '  , ' book ' , ' dress ' , ' guitar ' , ' giraffe '  , ' keyboard '  , ' Bill Gates ' , ' university ' , ' photography ' ]
 questions_cat = [' alive ' , ' cute ' , ' short neck ' , ' short dam ',' animals ' , ' animal ' , ' feet ' , ' 4 feet ' , ' four feet ' , ' wool ' , ' short wool ' , ' made sound ' , ' make sound ' , ' 3 letters ' , ' three letters ' , ' run ' , ' walk ' , ' 3 characters ' , ' three characters ' , ' meat eater ' , ' mammals ' , ' mammal ' ,  ' small body ' , ' pet ' , ' pets ' , ' domestic ' , ' domestics ' , ' pet animals ' , ' 4 feet ']
-questions_book = [' things ' , ' thing ' , ' for read ' ]
-questions_dress = [ 'clothing', 'things','sleeve','2sleeve','collar','thread','wool','sewing','pocket']
+questions_book = [' things ' , ' thing ' , ' for read ' , 'put it in pack' , 'put it in my pack']
+questions_dress = [ 'clothing', 'things','sleeve','2sleeve','collar','thread','wool','sewing','pocket' , 'wear']
 # shervin 
 questions_guitar = ['things' , 'music' , 'the wire' , 'nylon' , 'head' , 'tuning keys' , 'nut' , 'frets' , 'nech' , 'fret board' , ' upper bout' , 'rossette' , 'sound hole' , 'bridge saddle' , 'body' , 'bridge' , 'lower bout' , 'sound bord' , '6sim' , 'headstock' , 'nut' , ' machine heads ' , 'frets ', 'truss rod' , 'lnlays' , 'neck and fretboard ' , 'neck joint' , ' body' , ' pickups ' , 'electronics' ,'bridge' , 'stop tailpiece' , 'pickguard' , 'toggle' , 'switch' , ' things ' , ' music ' , 'thewire' , ' nylon ' , ' head ' , ' tuning keys ' , ' nut ' , ' frets ' , ' nech ' , ' fret board ' , 'upper bout ' , ' rossette ' , ' sound hole ' , ' bridge saddle ' , ' body ' , ' bridge ' , ' lower bout ' , ' sound bord ' , ' 6sim ' , ' headstock ' , ' nut ' , 'machine heads' , ' frets', ' truss rod ' , ' lnlays ' , ' neck and fretboard' , ' neck joint ' , 'body ' , 'pickups' , ' electronics ' ,' bridge ' , ' stop tailpiece ' , ' pickguard ' , ' toggle ' , ' switch ']
 questions_giraffe = [ 'alive' , 'animals' , 'animal', 'short dam' , 'feet' , '4 feet' , 'four feet' , 'wool' , 'short wool' , 'made sound' , 'make sound' , '7 letters' , 'seven letters' , 'run' , 'walk' , '7 characters' , 'seven characters' , 'grass eater', 'vegetarian' , 'mammals' , 'mammal' ,  'small body' , 'pet' , 'pets' , 'domestic' , 'domestics' , 'pet animals' , '4feet' , 'long neck' , 'ear' , '2ear' ,' alive' , ' animals ' , ' animal ', ' shortdam' , 'feet' , '4feet' , 'fourfeet' , ' wool ' , 'shortwool' , 'madesound'  , '7letters' , 'sevenletters' , ' run ' , ' walk ' , '7characters' , 'sevencharacters' , 'grasseater', ' vegetarian ' , ' mammals ' , ' mammal ' ,  'smallbody' , ' pet ' , ' pets ' , ' domestic ' , ' domestics ' , 'petanimals' , '4 feet' , ' long neck ' , ' ear ' , '2 ear']
@@ -33,15 +33,9 @@ if flag == True :
 		flag = False
 
 
-print(i)
-
 
 #this print just mean rule of 20 questions 
-print('******************** welcom to 20 questions ********************')
-print('in this game my AI chooses one word and you can guess it in 20 questions ')
-print('rule of this game : you can just ask 20 questions , AI just should say yes or no ')
-print('ok , lets start')
-print('now you can ask questions')
+print("******************** welcom to 20 questions ********************\nin this game my AI chooses one word and you can guess it in 20 questions\nrule of this game : you can just ask 20 questions , AI just should say yes or no\nok , lets start :\n\t\t\t\tnow you can ask questions")
 
 
 # this part can say good night and ... to you if you want to go 
@@ -49,16 +43,16 @@ def zone_time_part():
     date_now = datetime.datetime.now()
     time_now = float(date_now.strftime("%H"))
     if time_now >= 5 and time_now <= 10 :
-        print('good morning')
+        print({one}).format(one = "good morning" )
         exit()
     elif time_now >= 11 and time_now <= 16 :
-        print('good noon')
+        print({two}).format(two = 'good noon')
         exit()
     elif time_now >= 17 and time_now <= 21 :
-        print('good after noon')
+        print(three).format(three = 'good after noon')
         exit()
     else :
-        print('good night')
+        print({four}).format(four = 'good night')
         exit()
 
 
@@ -74,12 +68,12 @@ def one_proper_noun():   # its cat
 			print('ok you lose it was cat')
 			print(zone_time_part())
 		elif ask_questions in questions_cat :
-			print('yes')
+			print('***yes***')
 		elif ask_questions == 'cat':
 			print('nice its correct')
 			print(zone_time_part())
 		else :
-			print('no')
+			print('***no***')
 		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 
 		
@@ -97,12 +91,12 @@ def two_proper_noun(): # book
 			print('ok you lose it was book')
 			print(zone_time_part())
 		elif ask_questions in questions_book :
-			print('yes')
+			print('***yes***')
 		elif ask_questions == 'book' :
 			print('nice its correct')
 			print(zone_time_part())
 		else :
-			print('no')
+			print('***no***')
 		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 
 		
@@ -120,12 +114,12 @@ def three_proper_noun(): # its dress
 			print('ok you lose it was cat')
 			print(zone_time_part())
 		elif ask_questions in questions_dress :
-			print('yes')
+			print('***yes***')
 		elif ask_questions == 'dress':
 			print('nice its correct')
 			print(zone_time_part())
 		else :
-			print('no')
+			print('***no***')
 		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 
 
@@ -144,12 +138,12 @@ def four_proper_noun(): # guitar
 			print('ok you lose it was cat')
 			print(zone_time_part())
 		elif ask_questions in questions_guitar :
-			print('yes')
+			print('***yes***')
 		elif ask_questions == 'guitar':
 			print('nice its correct')
 			print(zone_time_part())
 		else :
-			print('no')
+			print('***no***')
 		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 
 
@@ -166,12 +160,12 @@ def five_proper_noun(): # giraffe
 			print('ok you lose it was cat')
 			print(zone_time_part())
 		elif ask_questions in questions_giraffe :
-			print('yes')
+			print('***yes***')
 		elif ask_questions == 'giraffe':
 			print('nice its correct')
 			print(zone_time_part())
 		else :
-			print('no')
+			print('***no***')
 		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 
 	
@@ -187,12 +181,12 @@ def six_proper_noun(): # keyboard
 			print('ok you lose it was cat')
 			print(zone_time_part())
 		elif ask_questions in questions_keyboard :
-			print('yes')
+			print('***yes***')
 		elif ask_questions == 'keyboard':
 			print('nice its correct')
 			print(zone_time_part())
 		else :
-			print('no')
+			print('***no***')
 		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 
 
@@ -211,12 +205,12 @@ def seven_proper_noun(): # Bill Gates
 			print('ok you lose it was cat')
 			print(zone_time_part())
 		elif ask_questions in questions_Bill_Gates :
-			print('yes')
+			print('***yes***')
 		elif ask_questions == 'Bill Gates':
 			print('nice its correct')
 			print(zone_time_part())
 		else :
-			print('no')
+			print('***no***')
 		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 
 
@@ -234,12 +228,12 @@ def eight_proper_noun(): # university
 			print('ok you lose it was cat')
 			print(zone_time_part())
 		elif ask_questions in questions_university :
-			print('yes')
+			print('***yes***')
 		elif ask_questions == 'university':
 			print('nice its correct')
 			print(zone_time_part())
 		else :
-			print('no')
+			print('***no***')
 		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 
 
@@ -259,12 +253,12 @@ def nine_proper_noun(): # photography
 			print('ok you lose it was cat')
 			print(zone_time_part())
 		elif ask_questions in questions_photography :
-			print('yes')
+			print('***yes***')
 		elif ask_questions == 'photography':
 			print('nice its correct')
 			print(zone_time_part())
 		else :
-			print('no')
+			print('***no***')
 		ask_questions = input().replace('is he' , '').replace('does it have' , '').replace('does it have a' , '').replace(' does it have' , '').replace(' does it have ' , '').replace(' does it have a' , '').replace(' does it have a ' , '').replace('is he ' , '').replace(' is he ' , '').replace('is there' , '').replace('is there for' , '').replace(' is here' , '').replace(' is there ' , '').replace(' is there for' , '').replace(' is there for ' , '').replace('is it ' , '').replace(' is it ' , '').replace('is it' , '').replace('?' , '').replace(' ?' , '').replace(' ? ' , '').replace('does it have a' , '').replace('Does it have' , '').replace('does it have ' , '').replace('does it have a ' , '').replace('Does it have a', '').replace('can it ' , '').replace('Can it' , '').replace('can it', '').replace('it is' , '').replace('it is a' , '').replace('its ' , '').replace('its a' , '').replace('its a ' , '').replace('its' , '').replace('can we' , '').replace('can we ' , '').replace(' can we ' , '')
 
 
@@ -275,21 +269,21 @@ def nine_proper_noun(): # photography
 
 
 # this part will call def based on random word
-if i == 'cat' :
+if i == ' cat ' :
 	one_proper_noun()
-elif i == 'book' :
+elif i == ' book ' :
 	two_proper_noun()
-elif i == 'dress' :
+elif i == ' dress ' :
 	three_proper_noun()
-elif i == 'guitar' :
+elif i == ' guitar ' :
 	four_proper_noun()
-elif i == 'giraffe' :
+elif i == ' giraffe ' :
 	five_proper_noun()
-elif i == 'keyboard' :
+elif i == ' keyboard ' :
 	six_proper_noun()
-elif i == 'Bill Gates' :
+elif i == ' Bill Gates ' :
 	seven_proper_noun()
-elif i == 'university' :
+elif i == ' university ' :
 	eight_proper_noun()
-elif i == 'photography' :
+elif i == ' photography ' :
 	nine_proper_noun()

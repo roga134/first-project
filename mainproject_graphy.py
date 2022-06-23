@@ -43,12 +43,14 @@ def good_n_m():
 	time_now = float(date_now.strftime("%H"))
 	delete_all_text()
 	if time_now >= 5 and time_now <= 20 :
-		tx_end1 = Label(project_graphy , text = "have good day" , font = ('Comic Sans MS' , 30 ) , bg = "#F2B33D" , fg = "black").pack()
+		text_one_val.set("have good day")
 	else :
-		Label(project_graphy , text = "good night" , font = ('Comic Sans MS' , 30 ) , bg = "#F2B33D" , fg = "black").pack()
+		text_two_val.set("good night")
 
 
 def set():
+	text_one_val.set("")
+	text_two_val.set("")
 	if_input.set("")
 
 
@@ -57,21 +59,15 @@ def set():
 
 
 def delete_all_text():
-	text_box1.destroy()
-	text_box2.destroy()
-	text_box3.destroy()
-	text_box4.destroy()
-	text_box5.destroy()
-	text_box6.destroy()
-	text_box7.destroy()
-	text_box8.destroy()
-	text_box9.destroy()
-	text_box10.destroy()
+	text_one_val.set("")
+	text_two_val.set("")
 	set()
 	button1.destroy()
 	button2.destroy()
 	button3.destroy()
 	button4.destroy()
+	button5.destroy()
+	button6.destroy()
 	text_box_main.after(0 , text_box_main.destroy)
 	input_box_main.after(0 , input_box_main.destroy)
 	but_exit.after(0 , but_exit.destroy())
@@ -85,17 +81,15 @@ def main():
 	global if_input
 	global input_box_main
 	global but_exit
-	global name_input
 
-	name_input=""
 
 	text_box_main = tk.Label(project_graphy, text="your text" , fg = 'black', bg = '#F2B33D' , font = ('Comic Sans MS' , 27 ))
-	text_box_main.place(x=290 , y = 115)
+	text_box_main.place(x=310 , y = 115)
 
 	if_input = StringVar()
 
 	input_box_main = Entry(project_graphy , textvariable = if_input )
-	input_box_main.place(x = 410 , y = 125)
+	input_box_main.place(x = 430 , y = 125)
 	
 	user_pick = if_input.get()
 
@@ -108,79 +102,52 @@ def main():
 	
 
 def all_text():
-	global text_box1
-	global text_box2
-	global text_box3
-	global text_box4
-	global text_box5
-	global text_box6
-	global text_box7
-	global text_box8
-	global text_box9
-	global text_box10
-	global la_y_n
+	global text_one_val
+	global text_two_val
 	global bu_y
 	global bu_n
 	global button1
 	global button2
 	global button3
 	global button4
+	global button5
+	global button6
 	global name_input
 	global if_input
 
 
 	text_one_val = StringVar()
-	text_one = tk.Label(project_graphy , textvariable = text_one_val , bg =)
+	text_one = tk.Label(project_graphy , textvariable = text_one_val , bg = '#F2B33D' , fg = "black"  , font = ( 'Comic Sans MS' , 33 ))
+	text_one.pack()
+
+	text_two_val = StringVar()
+	text_two = tk.Label(project_graphy , textvariable = text_two_val , bg = '#F2B33D' , fg = "black" ,  font = ( 'Comic Sans MS' , 33 ))
+	text_two.pack()
 
 
-
-	text_box1 = tk.Label(project_graphy , text = '**************Welcome to my AI*************' ,bg = '#F2B33D'  , fg = 'black' , font = ( 'Comic Sans MS' , 33 ))#welcom
-	text_box1.pack()
-
-
-	text_box2 = tk.Label(project_graphy , text = 'Hi' , bg = '#F2B33D', fg = 'black' ,  font = ('Comic Sans MS' , 24 ))
-	text_box2.pack()
-		
-
-	text_box3 = tk.Label(project_graphy, text = 'how are you?' , fg = "black" , bg = '#F2B33D' , font = ('Comic Sans MS' , 27 ))
-
-
-	text_box4 = tk.Label(project_graphy , text = 'tnx God' , fg = 'black' , bg = '#F2B33D' ,font = ('Comic Sans MS' , 33 ) )
-
-
-	text_box5 = tk.Label(project_graphy, text = 'you get better' , fg = 'black' , bg = '#F2B33D' , font = ('Comic Sans MS' , 33 ))
-
-
-	text_box6 = tk.Label(project_graphy, text = "whats your name?" , fg = "black" , bg = "#F2B33D" , font = ('Comic Sans MS' , 33 ))
-
-	name_input = StringVar()
-	text_box7 = tk.Label(project_graphy, textvariable = name_input, fg = "black" , bg = "#F2B33D" , font = ('Comic Sans MS' , 33 ))
+	text_one_val.set("**************Welcome to my AI*************")
+	text_two_val.set("Hi")
 	
 
 
-	text_box8 = tk.Label(project_graphy, text = "where are you from?" , fg = "black" , bg = "#F2B33D" , font = ('Comic Sans MS' , 33 ))
-
-
-	text_box9 = tk.Label(project_graphy, text = "thats nice, " +if_input.get() + " is good country", fg = "black" , bg = "#F2B33D" , font = ('Comic Sans MS' , 33 ))
-
-
-	text_box10 = tk.Label(project_graphy, text = "you can try and travel to good country" , fg = "black" , bg = "#F2B33D" , font = ('Comic Sans MS' , 33 ))
-
-
-	la_y_n = Label(project_graphy, text = "do you want to speak with me ?" , fg = "black" , bg = "#F2B33D" , font = ('Comic Sans MS' , 27))
-
-
-	button1 = Button(project_graphy , text = "click"  , font = ('Comic Sans MS' , 27 ) , fg = 'black' , bg = '#F2B33D' , command = hi_part )
-	button1.place(x = 290 , y = 155)
+	button1 = Button(project_graphy , text = "Click"  , font = ('Comic Sans MS' , 27 ) , fg = 'black' , bg = '#F2B33D' , command = hi_part )
+	button1.place(x = 450 , y = 155)
 		
 
-	button2 = Button(project_graphy , text = "feeling"  , font = ('Comic Sans MS' , 27 ) , fg = 'black' , bg = '#F2B33D' , command = feeling )
+	button2 = Button(project_graphy , text = "Click"  , font = ('Comic Sans MS' , 27 ) , fg = 'black' , bg = '#F2B33D' , command = feeling )
 
 
-	button3 = Button(project_graphy , text = "name"  , font = ('Comic Sans MS' , 27 ) , fg = 'black' , bg = '#F2B33D' , command = name )
+	button3 = Button(project_graphy , text = "Click"  , font = ('Comic Sans MS' , 27 ) , fg = 'black' , bg = '#F2B33D' , command = name )
 
 
-	button4 = Button(project_graphy , text = "country" , font = ('Comic Sans MS' , 27 ) , fg = "black" , bg = "#F2B33D" , command = country)
+	button4 = Button(project_graphy , text = "Click" , font = ('Comic Sans MS' , 27 ) , fg = "black" , bg = "#F2B33D" , command = country)
+
+
+	button5 = Button(project_graphy, text = "Click" , font = ('Comic Sans MS' , 27 ) , fg = "black" , bg = "#F2B33D" , command = city )
+
+
+	button6 = Button(project_graphy, text = "Click" , font = ('Comic Sans MS' , 27 ) , fg = "black" , bg = "#F2B33D" , command = info_city )
+
 
 
 	bu_y = Button(project_graphy , text = "Yes" , fg = "black" , bg = "#F2B33D" , font = ('Comic Sans MS' , 27 , ) , command = speak_yes)
@@ -206,79 +173,100 @@ def hi_part() :
 
 
 def new_text_world1():
-	text_box1.after(0 , text_box1.destroy())# welcome
-	text_box2.after(0 , text_box2.destroy())# hi
 	button1.after(0 , button1.destroy())
-	text_box3.pack()# how are you
-	button2.place( x = 290 , y = 155)
+	text_one_val.set('how are you?')
+	button2.place(x = 450 , y = 155)
 
 
-def feeling() :
-	text_box3.destroy()
+def feeling():
 	button2.destroy()
 	user_pick = if_input.get()
 	if user_pick in feeling_good :
 		set()
-		text_box4.pack() # tnx god
-		text_box6.pack()#whats your name
-		button3.place(x = 290 , y = 155)
+		text_one_val.set('tnx God')
+		text_two_val.set("whats your name?")
+		button3.place(x = 450 , y = 155)
 	else :
 		set()
-		text_box5.pack()# you get better
-		text_box6.pack()#whats your name
-		button3.place(x = 290 , y = 155)
+		text_one_val.set('you get better')
+		text_two_val.set("whats your name?")
+		button3.place(x = 450 , y = 155)
 
 
 def name():
-	global text_box7
-	global name_input 
-	name_input.set("nice to meet you " + if_input.get().replace('my name is ', "").replace('Im ', '').replace('my first name is ', '').replace('my last name is ', ''))
 	button3.destroy()
-	text_box4.destroy()
-	text_box5.destroy()
-	text_box6.destroy()
+	user_pick = if_input.get()
 	set()
-	text_box7.pack()
-	text_box8.pack()
-	button4.place(x = 290 , y = 155)
+	text_one_val.set("nice to meet you " + user_pick.replace('my name is ', "").replace('Im ', '').replace('my first name is ', '').replace('my last name is ', ''))
+	text_two_val.set("where are you from?")
+	button4.place(x = 450 , y = 155)
 	
 
 
 
+
 def country():
-	text_box8.destroy()
-	button4.destroy()
+	user_pick = if_input.get().replace('Im from ', "").replace('I am from ', '').replace('my country is ', '')
+	set()
 	if user_pick in good_country : 
-		name_input.set("thats nice, " + if_input.get().replace('my name is ', "").replace('Im ', '').replace('my first name is ', '').replace('my last name is ', '') + " is good country")
+		text_one_val.set("thats nice, " + user_pick + " is good country")
+		text_two_val.set('do you want to know about your city like weather , location and ...?')
+		button5.place(x = 450 , y = 155)
 	else : 
-		name_input.set("you can try and travel to good country" )
+		text_one_val.set("you can try and travel to good country" )
+		text_two_val.set('do you want to know some informaition about your city?')
+		button5.place(x = 450 , y = 155)
+
+
+def city():
+	user_pick = if_input.get()
+	set()
+	if user_pick in yes_part:
+		button5.destroy()
+		text_one_val.set("so please tell me your city")
+		button6.place(x = 450 , y = 155)
+	else :
+		print("hi")
+
+
+def info_city():
+	user_pick = if_input.get()
+	set()
+	first_name_of_city = user_pick[:1]
+	upper_first_name_of_city = str.upper(first_name_of_city)
+	replace_first_name_of_cirt = user_pick.replace(first_name_of_city , upper_first_name_of_city)
+	pasokh = get("https://api.openweathermap.org/data/2.5/weather?q="+replace_first_name_of_cirt+"&appid=33b6279f4b2c6787c70a5e62120ccbb6")
+	comlite_know_city = pasokh.json()
+	import_info_city = comlite_know_city.pop('coord' , 'base' , 'base' , 'temp_min' , 'temp_max' , 'pressure' , 'humidity' , 'visibility' , 'clouds' , 'dt' , 'sys' , 'sunrise' , 'sunset' , 'timezone' , 'name' , 'cod')
+	text_one_val.set(comlite_know_city)
+	print(comlite_know_city)
+
+
+
 
 
 
 
 def speak_yes_no():
-	text_box1.destroy()
-	text_box2.destroy()
 	text_box_main.destroy()
 	input_box_main.destroy()
 	button1.destroy()
 	but_exit.destroy()
 
 
-	la_y_n.pack()
+	text_one_val.set("do you want to speak with me ?")
 	bu_y.place(x = 400 , y = 100)
 	bu_n.place(x = 510 , y = 100)
 
 
 def speak_yes():
-	la_y_n.destroy()
+	set()
 	bu_y.destroy()
 	bu_n.destroy()
 	main()
 	new_text_world1()
 
 def speak_no():
-	la_y_n.destroy()
 	bu_y.destroy()
 	bu_n.destroy()
 	good_n_m()
