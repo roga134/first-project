@@ -98,7 +98,7 @@ def main():
 	but_exit.place(x = 450 , y = 210)
 
 
-
+#asd
 	
 
 def all_text():
