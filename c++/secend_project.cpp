@@ -6,12 +6,17 @@ using namespace std;
 
 class gradebook
 {
-	
-} 
+	public:
+		void massage()
+		{
+			cout << "how are you?";
+		}
+} ;
 
 
 int main()
 {
-	cout << "hi";
+	gradebook mygradebook ;
+	mygradebook.massage()
 	return 0 ;
 }
