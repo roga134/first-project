@@ -8,13 +8,12 @@ def calculator(n, m, li):
 	for i in li :
 		if q == 0 :
 			kp = count % m
+			count += 1
 			if flag == True:
-				count += 1
 				count_mosbat += i
 				if kp == 0 :
 					flag = False
 			elif flag == False : 
-				count += 1
 				count_manfi +=  i
 				if kp == 0 :
 					flag = True
@@ -24,7 +23,7 @@ def calculator(n, m, li):
 			ll = count % m
 			pp = n - q + 1
 			if count >= pp :
-				if w == 0 :
+				if c == 0 :
 					count_manfi += i
 				else :
 					count_mosbat += i
@@ -37,9 +36,10 @@ def calculator(n, m, li):
 				if ll == 0 :
 					flag = True
 	final_num = count_mosbat - count_manfi
-	print(final_num)
+	#print(final_num)
+	return final_num 
 
 
 
 #calculator(8, 1, [1, 2, 3, 4, 5, 6, 7, 8]) # -4
-calculator(8, 3, [1, 2, 3, 4, 5, 6, 7, 8]) # 6
+#calculator(8, 3, [1, 2, 3, 4, 5, 6, 7, 8]) # 6
